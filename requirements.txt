@@ -3,7 +3,7 @@ decord
 ftfy
 numpy
 pandas
-PIL
+Pillow
 plotly
 pytorch==1.7.1
 streamlit
