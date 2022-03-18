@@ -1,0 +1,10 @@
+cv2
+decord
+ftfy
+numpy
+pandas
+PIL
+plotly
+pytorch=1.7.1
+streamlit
+torch
