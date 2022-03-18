@@ -1,4 +1,4 @@
-cv
+opencv
 decord
 ftfy
 numpy
