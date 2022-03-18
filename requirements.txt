@@ -8,4 +8,4 @@ plotly
 torch
 streamlit
 torch
-clip
+clip-by-openai
