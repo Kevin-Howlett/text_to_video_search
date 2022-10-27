@@ -43,3 +43,11 @@ The model we are utilizing in our application, CLIP (developed by OpenAI), is a 
 While typical image classification models train an image feature extractor and a linear classifier to predict a label, CLIP trains an image encoder and text encoder to predict the correct pairings of a batch of (image, text) training examples. At test time the learned text encoder synthesizes a zero-shot linear classifier by embedding the names or descriptions of the target dataset’s classes.
 
 The approach we are taking in utilizing CLIP in our application is running equally spaced frames of a video through the model, producing word embeddings for the entire video. We then take user input in the form of a text string query, calculate probabilities of matches between text and word embeddings for each of the frames, and subsequently deliver frames/timestamps of interest based on the user query. As part of our pipeline, we are also implementing frame segmentation to allow the user to adjust the level of clarity of each query. This takes the form of a custom function which takes in image tensors for frames of the video along with an argument for the level of clarity, and outputs smaller overlapping sub-images/tensors. The sub-images will then be fed to CLIP, word embeddings will be compared to text strings, and the highest probability match will be outputted.  
+
+## The App
+
+When running the app, as shown in the picture below, you will be prompted to submit a MP4 video. The user may then select a confdience threshold (defaulted to 85%), a frame rate at which they would like the analysis (lower frame rate means linearly faster analysis, at cost of missing information) and which analysis type/granularity level they would like. 
+
+The granularity dropdown contains four options: "Low", "Medium", "High", and "Recursive". It is recommended to use recursive, as this will rcursively hone in on the exact spot, in each frame, which contains the best match. In the following example, the user has searched a music video for "man doing backflip". The app has intelligently found the exact spot in which this action occurs.
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/Hindsight%20AI%20App%201.png)
