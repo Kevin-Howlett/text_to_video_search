@@ -51,3 +51,12 @@ When running the app, as shown in the picture below, you will be prompted to sub
 The granularity dropdown contains four options: "Low", "Medium", "High", and "Recursive". It is recommended to use recursive, as this will rcursively hone in on the exact spot, in each frame, which contains the best match. In the following example, the user has searched a music video for "man doing backflip". The app has intelligently found the exact spot in which this action occurs.
 
 ![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/Hindsight%20AI%20App%201.png)
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/Hindsight%20AI%20App%202.png)
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/Hindsight%20AI%20App%203.png)
+
+The application also displays an interactive bar chart for all of the frames analyzed. This provides a more general scope of where matches were found in the video.
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/Hindsight%20AI%20App%204.png)
+
