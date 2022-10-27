@@ -60,3 +60,13 @@ The application also displays an interactive bar chart for all of the frames ana
 
 ![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/Hindsight%20AI%20App%204.png)
 
+We can see how the recursive analysis feature works through the following GIF. Each frame being analyzed is split by a (at first large) moving kernel and the sub-images are subsequently analyzed by the model. The kernel then beomes smaller by a predertmined proportion and further analysis is completed on the highest matching sub-image. This is done recursively until either no improvements are made in match confidence or the kernel becomes too small.
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/hindsight_recursive.gif)
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/hindsight_recursive.jpg)
+
+The model is also good at matching more abstract concepts and content. As shown below, the user searched an episode of the cartoon TV show "SpongeBob Squarepants" for the phrase "muscles" and the application found a muscular cartoon fish.
+
+![](https://github.com/Kevin-Howlett/text_to_video_search/blob/main/images/hindsight_muscle_fish.png)
+
